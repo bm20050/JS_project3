@@ -42,7 +42,25 @@ JavaScript는 자동차의 동력이라고 볼 수 있다.`
 
  
 /*실습 : 위의 문자열에서 HTML은 몇번 사용되었는지 확인*/
- 
+let pos = 0;
+let cnt = 0;
+while (true) {
+    pos = s.indexOf("웹", pos);
+    if (pos == -1) break;
+    cnt++;
+    pos = pos + 1;
+}
+console.log(cnt);
 
 /* 문자열 슬라이싱*/
- 
+let w = s.substr(0, 4);
+console.log(w);
+
+w = s.substring(5, 10);
+console.log(w);
+
+w = s.slice(-4);
+console.log(w);
+
+w = s.slice(4);
+console.log(w);
