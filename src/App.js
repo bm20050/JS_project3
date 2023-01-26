@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import MyDiv1 from './01/MyDiv1'
+import MyDiv2 from './01/MyDiv2';
+import MyClock from './01/MyClock';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-header">
+      <MyDiv1 />
+      <MyDiv2 />
+      <MyClock />
     </div>
+
   );
 }
 
